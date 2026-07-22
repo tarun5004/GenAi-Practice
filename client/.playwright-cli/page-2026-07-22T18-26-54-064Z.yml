@@ -1,0 +1,81 @@
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - generic [ref=e5]:
+      - strong [ref=e9]: TypeTutor
+      - generic [ref=e11]: Learn TypeScript with Mistral AI
+    - generic [ref=e12]: Mistral connected
+  - main [ref=e14]:
+    - region [ref=e15]:
+      - heading "What do you want to understand?" [level=1] [ref=e16]
+      - paragraph [ref=e17]: Ask any TypeScript question. Get clear explanations and practical examples.
+    - generic [ref=e18]:
+      - generic [ref=e19]: Your TypeScript question
+      - textbox "Your TypeScript question" [ref=e20]:
+        - /placeholder: Ask about promises, generics, types...
+        - text: Explain async/await
+      - button "Ask TypeTutor" [ref=e21] [cursor=pointer]
+    - generic "Suggested questions" [ref=e24]:
+      - button "Explain async/await" [ref=e25] [cursor=pointer]
+      - button "What are generics?" [ref=e26] [cursor=pointer]
+      - button "Interface vs type" [ref=e27] [cursor=pointer]
+    - generic [ref=e28]:
+      - paragraph [ref=e37]: You asked
+      - paragraph [ref=e38]: Explain async/await
+      - paragraph [ref=e39]: Mistral AI answer
+      - article [ref=e40]:
+        - heading [level=3] [ref=e41]:
+          - strong [ref=e42]: Async/Await in TypeScript (Simple Explanation)
+        - paragraph [ref=e43]:
+          - text: Async/await is a way to write
+          - strong [ref=e44]: asynchronous
+          - text: code (like fetching data from the internet) in a
+          - strong [ref=e45]: synchronous-looking
+          - text: style. It makes your code easier to read and avoids "callback hell."
+        - list [ref=e46]:
+          - listitem [ref=e47]:
+            - strong [ref=e48]:
+              - code [ref=e49]: async
+            - text: → Marks a function as asynchronous (it will return a
+            - code [ref=e50]: Promise
+            - text: ).
+          - listitem [ref=e51]:
+            - strong [ref=e52]:
+              - code [ref=e53]: await
+            - text: → Pauses execution until a
+            - code [ref=e54]: Promise
+            - text: resolves (waits for a result).
+        - separator [ref=e55]
+        - heading [level=3] [ref=e56]:
+          - strong [ref=e57]: "Example: Fetching Data from an API"
+        - code [ref=e59]: "// Simulate fetching user data (returns a Promise) async function fetchUserData(userId: number): Promise<string> { // Simulate API delay (2 seconds) await new Promise(resolve => setTimeout(resolve, 2000)); return `User ${userId} data`; } // Main function to run the async code async function main() { console.log(\"Fetching user data...\"); // Wait for the Promise to resolve const userData = await fetchUserData(1); console.log(\"Data received:\", userData); } main(); // Run the async function"
+        - heading [level=4] [ref=e60]:
+          - strong [ref=e61]: "Output:"
+        - code [ref=e63]: "Fetching user data... [2 seconds later] Data received: User 1 data"
+        - separator [ref=e64]
+        - heading [level=3] [ref=e65]:
+          - strong [ref=e66]: "Key Points:"
+        - list [ref=e67]:
+          - listitem [ref=e68]:
+            - strong [ref=e69]:
+              - code [ref=e70]: async
+            - text: functions always return a
+            - code [ref=e71]: Promise
+            - text: .
+          - listitem [ref=e72]:
+            - strong [ref=e73]:
+              - code [ref=e74]: await
+            - text: can only be used inside
+            - code [ref=e75]: async
+            - text: functions.
+          - listitem [ref=e76]:
+            - text: Errors can be caught using
+            - code [ref=e77]: try/catch
+            - text: ":"
+            - code [ref=e79]: "try { const data = await fetchUserData(1); } catch (error) { console.error(\"Failed to fetch:\", error); }"
+        - paragraph [ref=e80]:
+          - text: This makes async code
+          - strong [ref=e81]: cleaner
+          - text: than
+          - code [ref=e82]: .then()
+          - text: chains! 🚀
+  - contentinfo [ref=e34]: Powered by LangChain + Mistral AI

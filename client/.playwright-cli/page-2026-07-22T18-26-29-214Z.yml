@@ -1,0 +1,25 @@
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - generic [ref=e5]:
+      - strong [ref=e9]: TypeTutor
+      - generic [ref=e11]: Learn TypeScript with Mistral AI
+    - generic [ref=e12]: Mistral connected
+  - main [ref=e14]:
+    - region [ref=e15]:
+      - heading "What do you want to understand?" [level=1] [ref=e16]
+      - paragraph [ref=e17]: Ask any TypeScript question. Get clear explanations and practical examples.
+    - generic [ref=e18]:
+      - generic [ref=e19]: Your TypeScript question
+      - textbox "Your TypeScript question" [ref=e20]:
+        - /placeholder: Ask about promises, generics, types...
+      - button "Ask TypeTutor" [disabled] [ref=e21]
+    - generic "Suggested questions" [ref=e24]:
+      - button "Explain async/await" [ref=e25] [cursor=pointer]
+      - button "What are generics?" [ref=e26] [cursor=pointer]
+      - button "Interface vs type" [ref=e27] [cursor=pointer]
+    - generic [ref=e29]:
+      - generic [ref=e30]: T
+      - generic [ref=e31]:
+        - heading "Your explanation will appear here" [level=2] [ref=e32]
+        - paragraph [ref=e33]: Choose a suggestion or ask your own TypeScript question.
+  - contentinfo [ref=e34]: Powered by LangChain + Mistral AI
